@@ -1,0 +1,331 @@
+@import url('https://rsms.me/inter/inter.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+
+    font-size: 100%;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.nav-container {
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1000;
+    top: 0;
+    display: flex;
+    background-color: white;
+    flex-flow: column;
+}
+
+.nav {
+    flex-direction: row;
+    width: 100%;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 1rem 2.5rem 1rem;
+}
+
+#nav-responsive {
+    display: none;
+    justify-content: space-around;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo span {
+    color: blue;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.menu-item {
+    margin-left: 2rem;
+
+}
+
+.menu-item a, .menu-item a:hover, .menu-item a:focus, .menu-item a:active, .menu-item a:visited {
+    color: blue;
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-underline-offset: 0.2rem;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle button, .toggle button:hover, .toggle button:active, .toggle button:focus {
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    outline: 0;
+    background-color: transparent;
+}
+
+.toggle span {
+    color: blue;
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-decoration: none;
+}
+
+#nav-responsive {
+    display: none;
+}
+
+.menu-responsive {
+    display: flex;
+    flex-flow: column;
+}
+
+.menu-item-responsive {
+    margin: 1rem auto 1rem auto;
+}
+
+.menu-item-responsive a, .menu-item-responsive a:hover, .menu-item-responsive a:focus, .menu-item-responsive a:visited, .menu-item-responsive a:active {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: blue;
+    text-underline-offset: 0.2rem;
+}
+
+.feed-container {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    display: flex;
+}
+
+.feed {
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-gap: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 33vw 33vw 33vw;
+    grid-template-areas:
+        " item-2 item-2 item-2 item-2 item-1 item-1"
+        " item-3 item-3 item-4 item-4 item-5 item-5"
+        " item-6 item-6 item-6 item-6 item-7 item-7";
+    background-color: white;
+}
+
+.post-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.post-container .post-link {
+    text-decoration: none;
+}
+
+.post {
+    display: block;
+    position: relative;
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 100%;
+}
+
+.post-container-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.post-container-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: transparent;
+    width: 100%;
+    padding: 0.75rem;
+}
+
+.post-heading {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-transform: none;
+}
+
+.post-subheading {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    text-transform: uppercase;
+}
+
+
+.post .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.post .img:hover {
+    transform: scale(1.02);
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+}
+
+.post .youtube {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border: none;
+}
+
+
+#post-1 {
+    grid-area: item-1;
+}
+
+#post-2 {
+    grid-area: item-2;
+}
+
+#post-3 {
+    grid-area: item-3;
+}
+
+#post-4 {
+    grid-area: item-4;
+}
+
+#post-5 {
+    grid-area: item-5;
+}
+
+#post-6 {
+    grid-area: item-6;
+}
+
+#post-7 {
+    grid-area: item-7;
+}
+
+
+.about-container {
+    position: relative;
+    z-index: 1;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.about {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    min-height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: white;
+}
+
+.about-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: black;
+    text-align: justify;
+}
+
+.contact-container {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+}
+
+.contact {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    min-height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+    .toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #nav-responsive {
+        display: none;
+    }
+
+    .feed {
+        width: 100%;
+        min-height: 100%;
+        display: grid;
+        grid-gap: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(7, 66vw);
+        grid-template-areas:
+        " item-1"
+        " item-2"
+        " item-3"
+        " item-4"
+        " item-5"
+        " item-6"
+        " item-7";
+        background-color: white;
+    }
+}
