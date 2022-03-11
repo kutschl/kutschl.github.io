@@ -1,3 +1,5 @@
+@import url('https://rsms.me/inter/inter.css');
+
 .feed-container {
     position: relative;
     display: flex;
@@ -15,6 +17,5 @@
     width: auto;
     min-height: 100vh;
     scroll-snap-align: start;
-    border: 1px solid black;
     background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Ilm-Saale-Platte_bei_Paulinzella.JPG/1200px-Ilm-Saale-Platte_bei_Paulinzella.JPG");
 }
