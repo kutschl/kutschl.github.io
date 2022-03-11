@@ -1,5 +1,0 @@
-create App
-npx create-react-app react-tutorial
-
-start Project
-cd react-tutorial && npm start
