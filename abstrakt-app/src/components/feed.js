@@ -6,7 +6,7 @@ class Feed extends Component {
     render() {
         const elements = []
         for (let i = 0; i<10; i++) {
-            elements.push("TEST")
+            elements.push("TESTITEST")
         }
         const divs = []
         for (const[index, value] of elements.entries()) {
