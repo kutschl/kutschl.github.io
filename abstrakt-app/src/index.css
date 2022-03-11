@@ -1,0 +1,14 @@
+@import url('https://rsms.me/inter/inter.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+}
+
+.root-container {
+  position: relative;
+  overflow: hidden;
+}

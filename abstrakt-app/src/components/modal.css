@@ -1,0 +1,105 @@
+@import url('https://rsms.me/inter/inter.css');
+
+.modal-container-collapsed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 5;
+    pointer-events: none;
+    background-color: black;
+    transition: opacity 250ms ease, height 0s 250ms linear;
+}
+
+.modal-container-expanded {
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    z-index: 5;
+    opacity: 1;
+    pointer-events: all;
+    background-color: black;
+    transition: opacity 250ms ease, height 0s linear;
+}
+
+.modal {
+    position: relative;
+    top: 0;
+    margin: 12rem 6rem 12rem 6rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.info-container {
+    position: relative;
+    top: 0;
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+}
+
+.info-box {
+    display: flex;
+    flex-flow: column;
+    padding-right: 1.25rem;
+    padding-bottom: 2.5rem;
+    color: white;
+}
+
+.m-h3 {
+    font-size: 1.125rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 0.25rem;
+}
+
+.m-p {
+    font-size: 1.125rem;
+    text-transform: lowercase;
+    margin: 0;
+    padding: 0;
+}
+
+.m-a {
+    text-decoration: none;
+    color: white;
+}
+
+.m-a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.m-table {
+    font-size: 1.125rem;
+    text-transform: lowercase;
+    width: 18rem;
+    margin: 0;
+    padding: 0;
+}
+
+.m-tr, .m-td {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+    position: relative;
+    top: 0;
+    width: 50%;
+    color: white;
+
+    font-weight: 900;
+    font-size: 5rem;
+    text-decoration: none;
+}
