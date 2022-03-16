@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './header.css';
-import './modal.css';
+import './modal/modal.css';
 
 class Header extends Component {
     render() {

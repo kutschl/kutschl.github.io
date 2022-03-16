@@ -1,0 +1,151 @@
+@import url('https://rsms.me/inter/inter.css');
+
+.modal-container-collapsed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 5;
+    pointer-events: none;
+    background-color: black;
+    transition: opacity 250ms ease, height 0s 250ms linear;
+}
+
+.modal-container-expanded {
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    z-index: 5;
+    opacity: 1;
+    pointer-events: all;
+    background-color: black;
+    transition: opacity 250ms ease, height 0s linear;
+}
+
+.modal {
+    position: relative;
+    top: 0;
+    margin: 12rem 6rem 12rem 6rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.info-container {
+    position: relative;
+    top: 0;
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+}
+
+.info-box {
+    display: flex;
+    flex-flow: column;
+    padding-right: 1.25rem;
+    padding-bottom: 2.5rem;
+    color: white;
+}
+
+.info-h3 {
+    font-size: 1.125rem;
+    font-weight: 800;
+    text-transform: none;
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+.info-p {
+    font-size: 1.125rem;
+    text-transform: none;
+    margin: 0;
+    padding: 0;
+}
+
+.info-link, .info-link:visited  {
+    text-decoration: none;
+    color: white;
+}
+
+.info-link:hover, .info-link:active {
+    text-decoration: underline;
+}
+
+.info-link-box {
+    text-decoration: none;
+    color: white;
+}
+
+.info-link-box:after {
+    content: "↗,";
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.info-link-box:last-child:after {
+    content: "↗"
+}
+
+.info-table {
+    font-size: 1.125rem;
+    text-transform: none;
+    width: 25rem;
+    margin: 0;
+    padding: 0;
+}
+
+.info-tr, .info-td {
+    margin: 0;
+    padding: 0;
+}
+
+.info-list:after {
+    content: ", "
+}
+
+.info-list:last-child:after {
+    content: none;
+}
+
+.nav-container {
+    position: relative;
+    top: 0;
+    width: 50%;
+}
+
+.nav-box {
+    display: flex;
+    flex-flow: column;
+    padding-right: 1.25rem;
+    padding-bottom: 2.5rem;
+    color: white;
+}
+
+.nav-link, .nav-link:visited  {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover, .nav-link:active {
+    text-decoration: underline;
+}
+
+.nav-link-box {
+    font-weight: 900;
+    font-size: 3.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link-box:before {
+    content: "⟶";
+    padding-right: 1rem;
+}

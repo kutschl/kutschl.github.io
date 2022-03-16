@@ -1,0 +1,48 @@
+{
+  "About": {
+    "name": "About",
+    "content": {
+      "text": [
+        "Abstrakt Studio",
+        "Creative Collective based in Bonn by "
+      ],
+      "team": [
+        {
+          "id": "Therawpro",
+          "link": "https://www.instagram.com/therawpro"
+        },
+        {
+          "id": "Yngzy",
+          "link": "https://www.instagram.com/yngyzy"
+        },
+        {
+          "id": "Zizou",
+          "link": "https://www.instagram.com/zizou.53"
+        }
+      ],
+      "email": "abstrakt.studio@gmail.com"
+    }
+  },
+
+  "Skills": {
+    "name": "Skills",
+    "content": {
+      "skill-list": [
+        ["Video Editing", "Animations"],
+        ["Video Direction", "Filming"],
+        ["Photo Editing", "Graphic Design"],
+        ["Photo Directions", "Communication Design"]
+      ]
+    }
+  },
+
+  "Clients": {
+    "name": "Clients",
+    "content": {
+      "client-list": [
+        "1", "2", "3"
+      ]
+    }
+  }
+
+}
