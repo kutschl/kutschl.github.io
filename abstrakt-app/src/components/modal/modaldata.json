@@ -4,7 +4,7 @@
     "content": {
       "text": [
         "Abstrakt Studio",
-        "Creative Collective based in Bonn by "
+        "Kreativkollektiv run by "
       ],
       "team": [
         {
@@ -24,23 +24,34 @@
     }
   },
 
-  "Skills": {
-    "name": "Skills",
+  "Contact": {
+    "name": "Kontakt",
     "content": {
-      "skill-list": [
-        ["Video Editing", "Animations"],
-        ["Video Direction", "Filming"],
-        ["Photo Editing", "Graphic Design"],
-        ["Photo Directions", "Communication Design"]
+      "links": [
+        {
+          "id": "E-Mail",
+          "link": "mailto:info@abstraktstudio.com"
+        },
+        {
+          "id": "Instagram",
+          "link": "https://www.instagram.com/abstrakt.studio"
+        },
+        {
+          "id": "YouTube",
+          "link": "https://www.youtube.com"
+        }
       ]
     }
   },
 
-  "Clients": {
-    "name": "Clients",
+  "Skills": {
+    "name": "Skills",
     "content": {
-      "client-list": [
-        "1", "2", "3"
+      "skill-list": [
+        ["Video Editing", "Graphic Design"],
+        ["Video Direction", "Communication Design"],
+        ["Photo Editing", "Filming"],
+        ["Photo Direction", "Animations"]
       ]
     }
   }

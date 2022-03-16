@@ -40,8 +40,8 @@ class Info extends Component{
         return (
             <div className={"info-container"}>
                 <InfoAbout/>
+                <InfoContact/>
                 <InfoSkills/>
-                <InfoClients/>
             </div>
         )
     }
@@ -57,8 +57,6 @@ class InfoAbout extends Component {
             Links.push(<span className={"info-link-box"}><a target={"_blank"} className={'info-link'} href={i.link}>{i.id}</a></span>);
         }
 
-        const Input_Email = <span className={"info-link-box, info-email"}><a target={"_blank"} className={'info-link'} href={'mailto:' + Input.content.email}>{Input.content.email}</a></span>
-
         return (
             <div className={'info-box'}>
                 <h3 className={'info-h3'}>
@@ -71,9 +69,27 @@ class InfoAbout extends Component {
                     {Input.content.text[1]}
                     {Links}
                 </p>
-                <p className={'info-p'}>
-                    {Input_Email}
-                </p>
+            </div>
+        )
+    }
+}
+
+class InfoContact extends Component {
+    render() {
+        const Input = require('./modaldata.json').Contact
+
+        const Links = []
+
+        for(let i of Input.content.links) {
+            Links.push(<p className={"info-p"}><span className={"info-link-box"}><a target={"_blank"} className={'info-link'} href={i.link}>{i.id}</a></span></p>);
+        }
+
+        return (
+            <div className={'info-box'}>
+                <h3 className={'info-h3'}>
+                    {Input.name}
+                </h3>
+                {Links}
             </div>
         )
     }
@@ -101,29 +117,6 @@ class InfoSkills extends Component {
                 <table className={'info-table'}>
                     {Input_Table}
                 </table>
-            </div>
-        )
-    }
-}
-
-class InfoClients extends Component {
-    render() {
-        const Input = require('./modaldata.json').Clients
-
-        const Input_Clients = []
-
-        for(let i of Input.content["client-list"]) {
-            Input_Clients.push(<span className={"info-list"}>{i}</span>)
-        }
-
-        return (
-            <div className={'info-box'}>
-                <h3 className={'info-h3'}>
-                    {Input.name}
-                </h3>
-                <p className={'info-p'}>
-                    {Input_Clients}
-                </p>
             </div>
         )
     }
