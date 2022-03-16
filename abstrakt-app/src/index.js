@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Header from './components/header'
+import Header from './components/header/header'
 import Feed from './components/feed'
 import Modal from './components/modal/modal'
 
