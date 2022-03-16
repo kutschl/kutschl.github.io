@@ -7,8 +7,26 @@ class Modal extends Component {
         return (
             <div className={"modal-container modal-container-collapsed"}>
                 <div className={"modal"}>
-                    <Info/>
                     <Navigation/>
+                    <Info/>
+                </div>
+            </div>
+        )
+    }
+}
+
+class Navigation extends Component {
+    render() {
+        return (
+            <div className={"nav-container"}>
+                <div className={"nav-box"}>
+                    <span className={"nav-link-box"}><a href={""} className={"nav-link"}>Team</a></span>
+                </div>
+                <div className={"nav-box"}>
+                    <span className={"nav-link-box"}><a href={""} className={"nav-link"}>Projekte</a></span>
+                </div>
+                <div className={"nav-box"}>
+                    <span className={"nav-link-box"}><a href={""} className={"nav-link"}>Impressum</a></span>
                 </div>
             </div>
         )
@@ -17,6 +35,7 @@ class Modal extends Component {
 
 class Info extends Component{
     render() {
+        //todo
         const xxx = {
             1: 'Webdesign and Development by Lukas Kutsch',
             2: 'Inter Typeface (https://rsms.me/inter/)'
@@ -152,16 +171,6 @@ class InfoClients extends Component {
                 <p className={'m-p'}>
                     {content.p1}
                 </p>
-            </div>
-        )
-    }
-}
-
-class Navigation extends Component {
-    render() {
-        return (
-            <div className={"nav-container"}>
-
             </div>
         )
     }

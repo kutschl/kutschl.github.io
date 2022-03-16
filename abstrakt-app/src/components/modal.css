@@ -97,9 +97,33 @@
     position: relative;
     top: 0;
     width: 50%;
-    color: white;
+}
 
-    font-weight: 900;
-    font-size: 5rem;
+.nav-box {
+    display: flex;
+    flex-flow: column;
+    padding-right: 1.25rem;
+    padding-bottom: 2.5rem;
+    color: white;
+}
+
+.nav-link, .nav-link:visited  {
     text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover, .nav-link:active {
+    text-decoration: underline;
+}
+
+.nav-link-box {
+    font-weight: 900;
+    font-size: 3.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link-box:before {
+    content: "⟶";
+    padding-right: 1rem;
 }
